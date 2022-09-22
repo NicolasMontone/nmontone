@@ -1,26 +1,59 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+:root {
+  /* fonts */
+  --base-font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI',
+    'Helvetica Neue', Arial, sans-serif;
+  --font-family: 'Note Sans', var(--base-font-family);
+  --title-font-family: 'Montserrat', var(--font-family);
 
-a {
-  color: inherit;
-  text-decoration: none;
+  /* global */
+  --black: #111111;
+  --white: #ffffff;
 }
 
 * {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+body {
+  font-family: var(--font-family);
+  background: var(--background);
+  color: var(--text);
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--title-font-family);
+  color: var(--text);
+}
+
+p {
+  color: var(--text);
+}
+
+a {
+  text-decoration: none;
+  color: var(--link);
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--link);
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.ellipsis {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
