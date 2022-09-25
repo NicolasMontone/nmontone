@@ -1,0 +1,34 @@
+.Card {
+  display: flex;
+  flex-direction: column;
+
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.linkBox:hover {
+  text-decoration: none;
+}
+
+.title {
+  margin-bottom: 8px;
+
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  color: var(--text-color);
+}
+
+.subtitle {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  color: var(--text-mute-color);
+
+  margin: 0 0 6px;
+}
+
+.description {
+  max-width: 350px;
+}

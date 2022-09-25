@@ -9,10 +9,10 @@ const Head = ({ title, description, url }: Props): JSX.Element => (
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
     {/* Open graph */}
-    <meta property="og:site_name" content="Pluggy" />
+    <meta property="og:site_name" content="Nicolás Montone" />
     {/* this check is to not get undefined values */}
     {title && <meta property="og:title" content={title} />}
-    {description && <meta property="og:description" content={description} />}
+    <meta property="og:description" content={description} />
 
     <meta
       property="og:url"
@@ -20,8 +20,8 @@ const Head = ({ title, description, url }: Props): JSX.Element => (
     />
 
     {/* end of social media meta tags */}
-    {title && <meta name="twitter:title" content={title} />}
-    {description && <meta name="twitter:description" content={description} />}
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
 
     <link rel="icon" href="/favicon.ico" />
   </NextHead>
