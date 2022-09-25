@@ -1,0 +1,58 @@
+.ProjectsSection {
+  margin-top: 32px;
+}
+
+.ProjectsSection .intro {
+  display: flex;
+}
+
+.ProjectsSection .title {
+  display: flex;
+  align-items: center;
+
+  cursor: default;
+  margin-bottom: 4px;
+  background-color: var(--projects-color);
+}
+
+@keyframes shakeXAxis {
+  0% {
+    transform: translateX(3%);
+  }
+  30% {
+    transform: translateX(-3%);
+  }
+  60% {
+    transform: translateX(3%);
+  }
+  90% {
+    transform: translateX(-3%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.ProjectsSection .title .animatedIcon {
+  margin-left: 8px;
+}
+
+.ProjectsSection .title:hover .animatedIcon {
+  animation: shakeXAxis 0.5s;
+}
+
+.ProjectsSection .subtitle {
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--text-mute-color);
+}
+
+.ProjectsSection .cards {
+  display: flex;
+
+  margin-top: 20px;
+}
+
+.ProjectsSection .card:hover {
+  background-color: var(--projects-hover-color);
+}

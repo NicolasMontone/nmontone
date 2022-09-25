@@ -4,12 +4,13 @@ import { Section } from '../Section'
 
 import styles from './HomeHeader.module.css'
 
-const HomeHeader = () => {
-  return (
-    <Section className={styles.HomeHeader}>
-      <h1>Nicolás Montone</h1>
-    </Section>
-  )
-}
+const HomeHeader = () => (
+  <Section className={styles.HomeHeader}>
+    <h1 id={'title'} className={styles.title}>
+      Nicolás Montone
+    </h1>
+    <p className={styles.lead}>Just doing magic stuff ✨</p>
+  </Section>
+)
 
 export default HomeHeader

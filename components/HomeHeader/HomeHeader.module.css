@@ -1,0 +1,14 @@
+.HomeHeader .title {
+  font-size: 44px;
+  margin-bottom: 8px;
+
+  color: var(--text-color);
+}
+
+.HomeHeader .lead {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--text-mute-color);
+}
