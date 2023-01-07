@@ -3,6 +3,7 @@ import React from 'react'
 import { Card } from '../Card'
 import { Section } from '../Section'
 import { SectionHeader } from '../SectionHeader'
+import { Project, projects } from '../../lib/constants/projects'
 
 import styles from './ProjectsSection.module.css'
 
@@ -14,17 +15,16 @@ const ProjectsSection = () => (
       </SectionHeader>
     </div>
     <div className={styles.cards}>
-      <Card
-        title={'Picture in Popup'}
-        description={
-          <div>
-            A cool chrome extension to see youtube videos, cameras/screens in
-            Meet, and more! Made with TypeScript.
-          </div>
-        }
-        href={'https://github.com/NicolasMontone/picture-in-popup'}
-        className={styles.card}
-      />
+      {projects.map(({ title, description, subtitle, link }: Project) => (
+        <Card
+          key={title}
+          subtitle={subtitle}
+          title={title}
+          description={description}
+          href={link}
+          className={styles.card}
+        />
+      ))}
     </div>
   </Section>
 )

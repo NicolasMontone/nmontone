@@ -56,3 +56,19 @@
 .ProjectsSection .card:hover {
   background-color: var(--projects-hover-color);
 }
+
+@media screen and (max-width: 768px) {
+  .ProjectsSection .cards {
+    flex-wrap: wrap;
+  }
+
+  .ProjectsSection .cards .card {
+    width: calc(100% / 2 - 32px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .ProjectsSection .cards .card {
+    width: 100%;
+  }
+}
