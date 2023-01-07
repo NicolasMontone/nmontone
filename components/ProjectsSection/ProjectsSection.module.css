@@ -63,7 +63,7 @@
   }
 
   .ProjectsSection .cards .card {
-    width: calc(100% / 2 - 32px);
+    width: calc(100% / 2);
   }
 }
 
