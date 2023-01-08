@@ -7,9 +7,7 @@ import { ProjectsSection } from '../components/ProjectsSection'
 const Home: NextPage = () => (
   <Page
     title={'Nicolás Montone'}
-    description={
-      'Full stack developer, working with TypeScript, React, Next.JS, NodeJS, Redux, Serverless and more!'
-    }
+    description={'Full stack developer, solving problems with technology!'}
   >
     <HomeHeader />
     <ProjectsSection />
