@@ -1,13 +1,6 @@
 .Section {
-  padding: 0 64px;
-  max-width: 1440px;
+  padding: 0 32px;
   margin: auto;
-}
-
-@media screen and (max-width: 1024px) {
-  .Section {
-    padding: 0 32px;
-  }
 }
 
 @media screen and (max-width: 764px) {
