@@ -3,6 +3,18 @@
 }
 
 .container {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbarIcon {
+  cursor: pointer;
+}
+
+.container .items {
   display: flex;
   justify-content: flex-end;
   gap: 16px;
