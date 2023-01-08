@@ -10,9 +10,7 @@ import styles from './ProjectsSection.module.css'
 const ProjectsSection = () => (
   <Section className={styles.ProjectsSection}>
     <div className={styles.intro}>
-      <SectionHeader className={styles.title}>
-        Projects <div className={styles.animatedIcon}>🧪</div>
-      </SectionHeader>
+      <SectionHeader className={styles.title}>Projects</SectionHeader>
     </div>
     <div className={styles.cards}>
       {projects.map(({ title, description, subtitle, link }: Project) => (

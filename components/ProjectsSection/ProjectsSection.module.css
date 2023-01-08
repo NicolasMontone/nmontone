@@ -7,38 +7,9 @@
 }
 
 .ProjectsSection .title {
-  display: flex;
-  align-items: center;
-
-  cursor: default;
+  font-size: 36px;
+  font-weight: 700;
   margin-bottom: 4px;
-  background-color: var(--projects-color);
-}
-
-@keyframes shakeXAxis {
-  0% {
-    transform: translateX(3%);
-  }
-  30% {
-    transform: translateX(-3%);
-  }
-  60% {
-    transform: translateX(3%);
-  }
-  90% {
-    transform: translateX(-3%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-.ProjectsSection .title .animatedIcon {
-  margin-left: 8px;
-}
-
-.ProjectsSection .title:hover .animatedIcon {
-  animation: shakeXAxis 0.5s;
 }
 
 .ProjectsSection .subtitle {
@@ -49,22 +20,18 @@
 
 .ProjectsSection .cards {
   display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
 
   margin-top: 20px;
 }
 
-.ProjectsSection .card:hover {
-  background-color: var(--projects-hover-color);
+.ProjectsSection .cards .card {
+  width: calc(100% / 2 - 24px);
 }
 
-@media screen and (max-width: 768px) {
-  .ProjectsSection .cards {
-    flex-wrap: wrap;
-  }
-
-  .ProjectsSection .cards .card {
-    width: calc(100% / 2);
-  }
+.ProjectsSection .card:hover {
+  background-color: var(--projects-hover-color);
 }
 
 @media screen and (max-width: 600px) {

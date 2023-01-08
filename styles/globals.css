@@ -9,8 +9,11 @@
   --black: #111111;
   --white: #ffffff;
 
+  --link: #192c71;
+  --link-hover: #353556;
+
   /* text */
-  --text-color: #161313;
+  --text-color: #484444;
   --text-mute-color: #6c6c7f;
 
   /* colors */
@@ -20,6 +23,7 @@
 
 * {
   box-sizing: border-box;
+  color: var(--text-color)
 }
 
 body {
@@ -48,8 +52,7 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
-  color: var(--link);
+  color: var(--link-hover);
 }
 
 ul {
