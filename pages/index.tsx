@@ -1,8 +1,8 @@
 import type { NextPage } from 'next'
+import { Description } from '../components/Description'
 
 import { HomeHeader } from '../components/HomeHeader'
 import { Page } from '../components/Page'
-import { ProjectsSection } from '../components/ProjectsSection'
 
 const Home: NextPage = () => (
   <Page
@@ -10,7 +10,7 @@ const Home: NextPage = () => (
     description={'Full stack developer, solving problems with technology!'}
   >
     <HomeHeader />
-    <ProjectsSection />
+    <Description />
   </Page>
 )
 

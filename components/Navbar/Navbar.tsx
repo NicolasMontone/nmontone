@@ -10,7 +10,7 @@ import { NavbarItem } from './NavbarItem'
 
 const Navbar = () => {
   return (
-    <Section className={styles.Navbar}>
+    <Section className={styles.Navbar} fixedWidth={false}>
       <nav className={styles.container}>
         <div className={styles.navbarIcon}>
           <Link href={locations.home()}>

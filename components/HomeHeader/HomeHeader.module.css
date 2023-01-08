@@ -1,3 +1,8 @@
+.HomeHeader {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
 .HomeHeader .title {
   font-size: 36px;
   margin-bottom: 8px;

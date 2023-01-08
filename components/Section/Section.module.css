@@ -3,6 +3,10 @@
   margin: auto;
 }
 
+.Section.fixedWidth {
+  max-width: 768px;
+}
+
 @media screen and (max-width: 764px) {
   .Section {
     padding: 0 16px;
