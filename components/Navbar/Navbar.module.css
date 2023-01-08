@@ -1,0 +1,9 @@
+.Navbar {
+  margin-top: 32px;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+}
