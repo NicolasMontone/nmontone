@@ -26,7 +26,7 @@ const Head = ({ title, description, path }: Props): JSX.Element => (
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
 
-    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" href="/icon-light.svg" />
   </NextHead>
 )
 
