@@ -8,7 +8,7 @@ import { getSortedPostsData, Post } from '../lib/posts'
 
 import styles from '../styles/Blog.module.css'
 
-const Blog = ({ allPostsData }: { allPostsData: Post[] }) => (
+const Blog = ({ posts }: { posts: Post[] }) => (
   <Page
     title={'Nicolás Montone - Blog'}
     description={
@@ -18,31 +18,35 @@ const Blog = ({ allPostsData }: { allPostsData: Post[] }) => (
   >
     <Section className={styles.Blog}>
       <h1 className={styles.title}>Things I want to share 🪄❤️</h1>
-      <ul className={styles.postList}>
-        {allPostsData.map(({ id, title, description, date, readIn }) => (
-          <li key={id} className={styles.post}>
-            <Link href={locations.posts(id)}>
-              <a>
-                <strong>{title}</strong>
-                <div className={styles.description}>{description}</div>
-              </a>
-            </Link>
-            <div>
-              <small className={styles.date}>{date}</small> -{' '}
-              <small className={styles.readIn}>{readIn}</small>
-            </div>
-          </li>
-        ))}
-      </ul>
+      {posts.length > 0 ? (
+        <ul className={styles.postList}>
+          {posts.map(({ id, title, description, date, readIn }) => (
+            <li key={id} className={styles.post}>
+              <Link href={locations.posts(id)}>
+                <a>
+                  <strong>{title}</strong>
+                  <div className={styles.description}>{description}</div>
+                </a>
+              </Link>
+              <div>
+                <small className={styles.date}>{date}</small> -{' '}
+                <small className={styles.readIn}>{readIn}</small>
+              </div>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <h3>No post yet! I{"'"}m preparing some amazing stuff for you!</h3>
+      )}
     </Section>
   </Page>
 )
 
 export const getStaticProps: GetStaticProps = async () => {
-  const allPostsData = getSortedPostsData()
+  const posts = getSortedPostsData()
   return {
     props: {
-      allPostsData,
+      posts,
     },
   }
 }
