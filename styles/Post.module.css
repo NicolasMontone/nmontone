@@ -1,0 +1,33 @@
+.title {
+  font-size: 36px;
+  margin-bottom: 8px;
+
+  color: var(--text-color);
+}
+
+.date {
+  font-size: 14px;
+  margin-bottom: 16px;
+
+  color: var(--text-mute-color);
+}
+
+.articleData p {
+  margin-top: 14px;
+  line-height: 20px;
+}
+
+.articleData pre {
+  background-color: #f6f8fa;
+  border-radius: 4px;
+  padding: 16px;
+  overflow: auto;
+  line-height: 1.45;
+  tab-size: 4;
+  hyphens: none;
+}
+
+.goBack {
+  width: 100%;
+  margin-top: 20px;
+}
