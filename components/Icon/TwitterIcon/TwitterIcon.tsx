@@ -9,7 +9,7 @@ const TwitterIcon = () => (
       stroke="none"
       strokeWidth="1"
       fill="none"
-      fill-rule="evenodd"
+      fillRule="evenodd"
     >
       <g
         id="3---Profile-Expanded---Recruiting-Activity---Leave-a-Note"
