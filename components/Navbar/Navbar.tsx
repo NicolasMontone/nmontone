@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { locations } from '../../lib/constants/locations'
-import { GithubIcon, TwitterIcon } from '../Icon'
+import { GithubIcon, TwitterIcon, VscoIcon } from '../Icon'
 import { Section } from '../Section'
 
 import styles from './Navbar.module.css'
@@ -46,6 +46,15 @@ const Navbar = () => {
             }
             title={'Twitter'}
             href={'https://twitter.com/montonenico'}
+          />
+          <NavbarItem
+            content={
+              <a target={'_blank'} rel="noopener noreferrer">
+                <VscoIcon />
+              </a>
+            }
+            title={'Vsco'}
+            href={'https://vsco.co/nicomontone/gallery'}
           />
         </div>
       </nav>

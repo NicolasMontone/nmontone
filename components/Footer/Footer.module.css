@@ -1,22 +1,10 @@
 .Footer {
   display: flex;
   justify-content: center;
-  flex: 1;
-  justify-content: center;
-  align-items: center;
 
-  padding: 2rem 0;
-  margin-top: 32px;
-  border-top: 1px solid #eaeaea;
+  margin-top: 42px;
 }
 
-.Footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.Footer a .logo {
-  margin-left: 8px;
+.Footer small {
+  color: var(--text-mute-color);
 }
