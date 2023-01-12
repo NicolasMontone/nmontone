@@ -1,7 +1,8 @@
 ---
 title: Window is not defined when trying to use a React component from a UI library with Webpack ^4 in Next.js
-readIn: 5min
+readIn: 7 min
 date: 11/01/2023
+description: A really cool problem a faced and a deep understanding of the globalObject in Webpack
 ---
 
 Note after reading: This post was made just to share an experience, and if you are a Webpack champion and you see some mistake, or you just want to talk a little bit, please contact me on [Twitter](https://twitter.com/MontoneNico)!
