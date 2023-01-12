@@ -9,3 +9,9 @@
 .Footer small {
   color: var(--text-mute-color);
 }
+
+@media screen and (max-width: 540px) {
+  .Footer {
+    margin-top: 12px;
+  }
+}
