@@ -24,7 +24,7 @@ const Blog = ({ posts }: { posts: Post[] }) => (
             <li key={id} className={styles.post}>
               <Link href={locations.posts(id)}>
                 <a>
-                  <strong>{title}</strong>
+                  <h3 className={styles.title}>{title}</h3>
                   <div className={styles.description}>{description}</div>
                 </a>
               </Link>
