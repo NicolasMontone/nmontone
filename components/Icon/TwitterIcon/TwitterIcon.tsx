@@ -3,13 +3,13 @@ import React from 'react'
 import Icon from '../Icon'
 
 const TwitterIcon = () => (
-  <Icon width="16px" height="14px" viewBox="0 0 16 14">
+  <Icon width="22px" height="20px" viewBox="0 0 18 16">
     <g
       id="Profile"
       stroke="none"
-      stroke-width="1"
+      strokeWidth="1"
       fill="none"
-      fill-rule="evenodd"
+      fillRule="evenodd"
     >
       <g
         id="3---Profile-Expanded---Recruiting-Activity---Leave-a-Note"

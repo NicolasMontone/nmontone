@@ -1,22 +1,17 @@
 .Footer {
   display: flex;
   justify-content: center;
-  flex: 1;
-  justify-content: center;
-  align-items: center;
 
-  padding: 2rem 0;
-  margin-top: 32px;
-  border-top: 1px solid #eaeaea;
+  margin-top: 42px;
+  padding: 16px;
 }
 
-.Footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+.Footer small {
+  color: var(--text-mute-color);
 }
 
-.Footer a .logo {
-  margin-left: 8px;
+@media screen and (max-width: 540px) {
+  .Footer {
+    margin-top: 12px;
+  }
 }
