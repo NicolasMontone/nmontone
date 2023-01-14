@@ -22,6 +22,10 @@
   color: var(--text-color);
 }
 
+.post:hover .title {
+  text-decoration: underline;
+}
+
 .description {
   margin-top: 4px;
   font-size: 14px;
