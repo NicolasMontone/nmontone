@@ -1,5 +1,5 @@
 export type Props = {
   title: string
-  description: string
+  description?: string
   path?: string
 }

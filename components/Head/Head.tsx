@@ -2,20 +2,19 @@ import { default as NextHead } from 'next/head'
 
 import { Props } from './Head.types'
 
+const DESCRIPTION = 'Nicolás Montone - Portfolio and Blog'
+
 const Head = ({ title, description, path }: Props): JSX.Element => (
   <NextHead>
     <meta charSet="utf-8" />
     <title>{title}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content={description} />
+    <meta name="description" content={description || DESCRIPTION} />
     {/* Open graph */}
-    <meta
-      property="og:site_name"
-      content="Nicolás Montone - Fullstack dev, solving problems with technology"
-    />
+    <meta property="og:site_name" content="Nicolás Montone" />
     {/* this check is to not get undefined values */}
     {title && <meta property="og:title" content={title} />}
-    <meta property="og:description" content={description} />
+    <meta property="og:description" content={description || DESCRIPTION} />
 
     <meta
       property="og:url"
@@ -24,7 +23,7 @@ const Head = ({ title, description, path }: Props): JSX.Element => (
 
     {/* end of social media meta tags */}
     <meta name="twitter:title" content={title} />
-    <meta name="twitter:description" content={description} />
+    <meta name="twitter:description" content={description || DESCRIPTION} />
 
     <link rel="icon" href="/icon-light.svg" />
   </NextHead>
