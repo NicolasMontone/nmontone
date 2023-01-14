@@ -9,15 +9,9 @@ import { getSortedPostsData, Post } from '../lib/posts'
 import styles from '../styles/Blog.module.css'
 
 const Blog = ({ posts }: { posts: Post[] }) => (
-  <Page
-    title={'Nicolás Montone - Blog'}
-    description={
-      'Some thoughts about technology, life, and everything in between.'
-    }
-    url={'/blog'}
-  >
+  <Page title={'Nicolás Montone - Blog'} url={'/blog'}>
     <Section className={styles.Blog}>
-      <h1 className={styles.title}>Things I want to share 🪄❤️</h1>
+      <h1 className={styles.title}>Things I want to share</h1>
       {posts.length > 0 ? (
         <ul className={styles.postList}>
           {posts.map(({ id, title, description, date, readIn }) => (
