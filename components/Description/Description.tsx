@@ -18,7 +18,7 @@ const Description = () => (
       </p>
       <p>
         {
-          "Outside of programming, I'm a passionate magician, I love to talk with people about magic 🪄. Also, I love to play video games 🎮, and traveling 🌎."
+          "Outside of programming, I'm a passionate magician, I love to talk with people about magic 🪄. Also, I love to play video games 🎮, and travelling 🌎."
         }
       </p>
       <p>
