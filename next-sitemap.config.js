@@ -1,12 +1,9 @@
 /** @type {import('next-sitemap').IConfig} */
 
-// NEXT_PUBLIC_VERCEL_URL env is the name of the site, ie: pluggy.ai
-const siteUrl = process.env.NEXT_PUBLIC_VERCEL_URL
-  ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
-  : 'https://nicolasmontone..com'
+const SITE_URL = 'https://nicolasmontone..com'
 
 module.exports = {
-  siteUrl,
+  siteUrl: SITE_URL,
   exclude: ['/404'],
   generateRobotsTxt: true,
   robotsTxtOptions: {
@@ -18,8 +15,8 @@ module.exports = {
       { userAgent: '*', allow: '/' },
     ],
     additionalSitemaps: [
-      `${siteUrl}/sitemap.xml`,
-      `${siteUrl}/server-sitemap.xml`,
+      `${SITE_URL}/sitemap.xml`,
+      `${SITE_URL}/server-sitemap.xml`,
     ],
   },
 }
