@@ -4,7 +4,7 @@ import { Props } from './Head.types'
 
 const DESCRIPTION = 'Nicolás Montone - Portfolio and Blog'
 
-const Head = ({ title, description, path }: Props): JSX.Element => (
+const Head = ({ title, description, path, image }: Props): JSX.Element => (
   <NextHead>
     <meta charSet="utf-8" />
     <title>{title}</title>
@@ -15,7 +15,9 @@ const Head = ({ title, description, path }: Props): JSX.Element => (
     {/* this check is to not get undefined values */}
     {title && <meta property="og:title" content={title} />}
     <meta property="og:description" content={description || DESCRIPTION} />
-
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content={image} />
+    
     <meta
       property="og:url"
       content={`https://nicolasmontone.com/${path || ''}`}

@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { Page } from '../../components/Page'
 import { Section } from '../../components/Section'
 import { locations } from '../../lib/constants/locations'
+import { buildOgImageUrl } from '../../lib/constants/ogImage'
 import { getAllPostIds, getPostData, Post as PostType } from '../../lib/posts'
 
 import styles from '../../styles/Post.module.css'
@@ -13,7 +14,11 @@ export default function Post({
   postData: PostType
 }) {
   return (
-    <Page title={title} description={description}>
+    <Page
+      title={title}
+      description={description}
+      image={buildOgImageUrl(title)}
+    >
       <Section className={styles.Post}>
         <article>
           <h1 className={styles.title}>{title}</h1>
