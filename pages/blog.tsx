@@ -4,12 +4,13 @@ import Link from 'next/link'
 import { Page } from '../components/Page'
 import { Section } from '../components/Section'
 import { locations } from '../lib/constants/locations'
+import { buildOgImageUrl } from '../lib/constants/ogImage'
 import { getSortedPostsData, Post } from '../lib/posts'
 
 import styles from '../styles/Blog.module.css'
 
 const Blog = ({ posts }: { posts: Post[] }) => (
-  <Page title={'Nicolás Montone - Blog'} url={'/blog'}>
+  <Page title={'Nicolás Montone - Blog'} url={'/blog'} image={buildOgImageUrl('Blog')}>
     <Section className={styles.Blog}>
       <h1 className={styles.title}>Things I want to share</h1>
       {posts.length > 0 ? (
