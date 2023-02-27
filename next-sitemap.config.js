@@ -1,8 +1,8 @@
 /** @type {import('next-sitemap').IConfig} */
 
-// VERCEL_URL env is the name of the site, ie: pluggy.ai
-const siteUrl = process.env.VERCEL_URL
-  ? `https://${process.env.VERCEL_URL}`
+// NEXT_PUBLIC_VERCEL_URL env is the name of the site, ie: pluggy.ai
+const siteUrl = process.env.NEXT_PUBLIC_VERCEL_URL
+  ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
   : 'https://nicolasmontone..com'
 
 module.exports = {
