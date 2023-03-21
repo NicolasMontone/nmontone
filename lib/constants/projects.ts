@@ -24,4 +24,10 @@ export const projects: Project[] = [
       'A personal website made with love and Next.js. Check out the source code on GitHub!',
     link: 'https://github.com/NicolasMontone/nmontone',
   },
+  {
+    title: "Pluggy's main projects",
+    description:
+      'YC S21 startup. Build and parcipate in most of the projects inside the company, like the core API product, the Application (like Plaid Link), and the Dashboard.',
+    link: 'https://pluggy.ai/',
+  },
 ]
