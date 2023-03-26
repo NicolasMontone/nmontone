@@ -53,6 +53,16 @@ const Description = () => (
         </a>
         .
       </p>
+      <p>
+        Also, if you are interested in my work experience and more you can{' '}
+        <a
+          href="https://nicolas-montone.notion.site/nicolas-montone/Nicol-s-Montone-CV-479de822460b41b68b3f30b5435898bf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          find it here!
+        </a>
+      </p>
     </article>
   </Section>
 )
