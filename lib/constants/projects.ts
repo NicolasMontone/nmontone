@@ -30,4 +30,10 @@ export const projects: Project[] = [
       'YC S21 startup. Build and parcipate in most of the projects inside the company, like the core API product, the Application (like Plaid Link), and the Dashboard.',
     link: 'https://pluggy.ai/',
   },
+  {
+    title: 'cryptosapp',
+    description:
+      'A crypto Wallet inside a WhatsApp bot that allows you to send crypto to another wallets or phone numbers.',
+    link: 'https://github.com/NicolasMontone/cryptosapp-wallet',
+  },
 ]
