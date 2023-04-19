@@ -10,6 +10,10 @@
   align-items: center;
 }
 
+.Navbar a {
+  text-decoration: none;
+}
+
 .navbarIcon {
   cursor: pointer;
 }
