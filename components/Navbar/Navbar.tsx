@@ -10,16 +10,16 @@ import styles from './Navbar.module.css'
 const Navbar = () => (
   <Section className={styles.Navbar} fixedWidth={false}>
     <nav className={styles.container}>
-      <div className={styles.navbarIcon}>
         <Link href={locations.home()}>
+      <div className={styles.navbarIcon}>
           <Image
             width={40}
             height={40}
             src={'/icon.svg'}
             alt={'Nicolás Montone Icon'}
           />
-        </Link>
       </div>
+        </Link>
       <div className={styles.items}>
         <Link href={locations.blog()}>Blog</Link>
 

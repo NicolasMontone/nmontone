@@ -21,12 +21,17 @@ const Tracker = () => {
           (element as HTMLElement).id?.includes('card'),
         )[0] as HTMLElement
 
+      const anchorHovered = event
+        .composedPath()
+        .filter(
+          (element: EventTarget) => (element as HTMLElement).tagName === 'A',
+        )[0] as HTMLElement
+
       const { clientX, clientY } = event
 
       const keyFrames: {
         top: string
         left: string
-        opacity?: number
         width?: string
         height?: string
         borderRadius?: string
@@ -35,14 +40,15 @@ const Tracker = () => {
         left: `${clientY}px`,
       }
 
-      if (hoveredCard) {
-        const { offsetHeight, offsetWidth } = hoveredCard
-        const { x: elementX, y: elementY } = hoveredCard.getBoundingClientRect()
-        keyFrames.top = `${elementY}px`
-        keyFrames.left = `calc(${elementX}px - 12px)`
-        keyFrames.opacity = 0.2
-        keyFrames.height = `${offsetHeight}px`
-        keyFrames.width = `${offsetWidth}px`
+      const elementHovered = hoveredCard || anchorHovered
+      if (elementHovered) {
+        const { offsetHeight, offsetWidth } = elementHovered
+        const { x: elementX, y: elementY } =
+          elementHovered.getBoundingClientRect()
+        keyFrames.top = `calc(${elementY}px - 6px)`
+        keyFrames.left = `calc(${elementX}px - 6px)`
+        keyFrames.height = `calc(${offsetHeight}px + 12px)`
+        keyFrames.width = `calc(${offsetWidth}px + 12px)`
         keyFrames.borderRadius = '10px'
       } else {
         keyFrames.top = `${clientY}px`
@@ -53,7 +59,7 @@ const Tracker = () => {
       }
 
       trackerRef.current.animate(keyFrames, {
-        duration: hoveredCard ? 1000 : 350,
+        duration: elementHovered ? 800 : 300,
         fill: 'forwards',
         iterationComposite: 'replace',
       })
