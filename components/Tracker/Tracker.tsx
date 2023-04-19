@@ -10,6 +10,11 @@ const Tracker = () => {
       return
     }
 
+    if ('ontouchstart' in window) {
+      // not supported on touch devices (yet)
+      return
+    }
+
     function handleTrackerPositionOffsetWithAnimations(event: MouseEvent) {
       if (!trackerRef.current) {
         return
@@ -65,6 +70,10 @@ const Tracker = () => {
       })
     }
     window.onmousemove = handleTrackerPositionOffsetWithAnimations
+
+    return () => {
+      window.onmousemove = null
+    }
   }, [])
 
   return <div className={styles.Tracker} id={'Tracker'} ref={trackerRef} />

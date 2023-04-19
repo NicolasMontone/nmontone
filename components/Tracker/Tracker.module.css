@@ -6,5 +6,5 @@
   right: 0;
 
   border-radius: 100%;
-  background-color: #CAE9FF;
+  background-color: var(--tracker-color);
 }
