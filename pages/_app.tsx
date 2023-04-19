@@ -3,6 +3,7 @@ import { useRouter } from 'next/router'
 import type { AppProps } from 'next/app'
 
 import * as ga from '../lib/ga'
+import { Tracker } from '../components/Tracker'
 
 import '../styles/globals.css'
 
@@ -25,7 +26,12 @@ function MyApp({ Component, pageProps }: AppProps) {
     }
   }, [router.events])
 
-  return <Component {...pageProps} />
+  return (
+    <>
+      <Tracker />
+      <Component {...pageProps} />
+    </>
+  )
 }
 
 export default MyApp

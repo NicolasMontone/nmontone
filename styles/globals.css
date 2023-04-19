@@ -18,12 +18,21 @@
 
   /* colors */
   --projects-color: #85e3ff;
-  --projects-hover-color: #85e3ff80;
 }
 
 * {
   box-sizing: border-box;
   color: var(--text-color);
+  /* cursor: none !important; */
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #f2f2f2;
+}
+
+html:hover #Tracker {
+  opacity: 1;
 }
 
 body {
