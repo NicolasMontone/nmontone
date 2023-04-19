@@ -7,11 +7,10 @@
   cursor: pointer;
   transition: 0.2s all ease-out;
   text-decoration: none;
-  opacity: 0.6;
 }
 
-.Card:hover {
-  opacity: 1;
+.Card a {
+  text-decoration: none;
 }
 
 .linkBox:hover {

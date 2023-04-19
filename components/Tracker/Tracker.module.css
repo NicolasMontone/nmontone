@@ -1,0 +1,10 @@
+.Tracker {
+  position: fixed;
+  pointer-events: none;
+  z-index: -1;
+  left: 0;
+  right: 0;
+
+  border-radius: 100%;
+  background-color: var(--tracker-color);
+}

@@ -10,7 +10,11 @@ import { getSortedPostsData, Post } from '../lib/posts'
 import styles from '../styles/Blog.module.css'
 
 const Blog = ({ posts }: { posts: Post[] }) => (
-  <Page title={'Nicolás Montone - Blog'} url={'/blog'} image={buildOgImageUrl('Blog')}>
+  <Page
+    title={'Nicolás Montone - Blog'}
+    url={'/blog'}
+    image={buildOgImageUrl('Blog')}
+  >
     <Section className={styles.Blog}>
       <h1 className={styles.title}>Things I want to share</h1>
       {posts.length > 0 ? (
@@ -18,10 +22,8 @@ const Blog = ({ posts }: { posts: Post[] }) => (
           {posts.map(({ id, title, description, date, readIn }) => (
             <li key={id} className={styles.post}>
               <Link href={locations.posts(id)}>
-                <a>
-                  <h3 className={styles.title}>{title}</h3>
-                  <div className={styles.description}>{description}</div>
-                </a>
+                <h3 className={styles.title}>{title}</h3>
+                <div className={styles.description}>{description}</div>
               </Link>
               <div>
                 <small className={styles.date}>{date}</small> -{' '}

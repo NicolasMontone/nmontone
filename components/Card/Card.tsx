@@ -5,7 +5,7 @@ import { Props } from './Card.types'
 import styles from './Card.module.css'
 
 const Card = ({ title, description, subtitle, className, href }: Props) => (
-  <div className={`${styles.Card} ${className || ''}`}>
+  <div className={`${styles.Card} ${className || ''}`} id={`card-${title}`}>
     <a
       href={href}
       className={styles.linkBox}

@@ -3,8 +3,10 @@ import { useRouter } from 'next/router'
 import type { AppProps } from 'next/app'
 
 import * as ga from '../lib/ga'
+import { Tracker } from '../components/Tracker'
 
 import '../styles/globals.css'
+import Script from 'next/script'
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter()
@@ -25,7 +27,25 @@ function MyApp({ Component, pageProps }: AppProps) {
     }
   }, [router.events])
 
-  return <Component {...pageProps} />
+  return (
+    <>
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-WRG3YV4PBP"
+      ></Script>
+      <Script id={'Analytics'}>
+        {`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-WRG3YV4PBP');
+        `}
+      </Script>
+
+      <Tracker />
+      <Component {...pageProps} />
+    </>
+  )
 }
 
 export default MyApp
