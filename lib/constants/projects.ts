@@ -32,6 +32,7 @@ export const projects: Project[] = [
   },
   {
     title: 'cryptosapp',
+    subtitle: "Hackathon's winner 🏆 (ITBA's Hackathon 2023)",
     description:
       'A crypto Wallet inside a WhatsApp bot that allows you to send crypto to another wallets or phone numbers.',
     link: 'https://github.com/NicolasMontone/cryptosapp-wallet',

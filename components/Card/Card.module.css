@@ -27,12 +27,12 @@
 }
 
 .subtitle {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 300;
   line-height: 20px;
   color: var(--text-mute-color);
 
-  margin: 0 0 6px;
+  margin: -8px 0 2px;
 }
 
 .description {
