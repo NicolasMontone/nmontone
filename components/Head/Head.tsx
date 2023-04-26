@@ -17,16 +17,19 @@ const Head = ({ title, description, path, image }: Props): JSX.Element => (
     <meta property="og:description" content={description || DESCRIPTION} />
     <meta property="og:type" content="website" />
     <meta property="og:image" content={image} />
-    
     <meta
       property="og:url"
       content={`https://nicolasmontone.com/${path || ''}`}
     />
-
-    {/* end of social media meta tags */}
     <meta name="twitter:title" content={title} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content={image} />
     <meta name="twitter:description" content={description || DESCRIPTION} />
-
+    <meta property="og:author" content="Nicolás Montone" />
+    <meta property="og:author:email" content="montonenicolas01@gmaiil.com" />
+    <meta property="og:author:url" content="https://nicolasmontone.com" />
+    <meta property="og:author:username" content="nicolasmontone" />
+    <meta name="twitter:creator" content="@montonenico" />=
     <link rel="icon" href="/icon-light.svg" />
   </NextHead>
 )
