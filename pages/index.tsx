@@ -9,7 +9,7 @@ const Home: NextPage = () => (
   <Page
     title={'Nicolás Montone'}
     description={'Full stack developer, solving problems with technology!'}
-    image={buildOgImageUrl('currently building')}
+    image={buildOgImageUrl('Currently building')}
   >
     <HomeHeader />
     <Description />

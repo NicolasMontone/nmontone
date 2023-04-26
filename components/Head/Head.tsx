@@ -2,7 +2,7 @@ import { default as NextHead } from 'next/head'
 
 import { Props } from './Head.types'
 
-const DESCRIPTION = 'Nicolás Montone - Portfolio and Blog'
+const DESCRIPTION = 'Nicolás Montone'
 
 const Head = ({ title, description, path, image }: Props): JSX.Element => (
   <NextHead>

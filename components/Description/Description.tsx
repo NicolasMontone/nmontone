@@ -7,6 +7,7 @@ import styles from './Description.module.css'
 const Description = () => (
   <Section className={styles.Description}>
     <article title={'Nicolás Montone description'}>
+      <p>{"Hello! I'm Nico! Nice to meet you 👋"}</p>
       <p>
         {
           "I'm a full stack developer, I love solving problems with technology. I'm currently working at"
