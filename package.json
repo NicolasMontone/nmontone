@@ -1,34 +1,26 @@
 {
-  "name": "nicolasmontone",
+  "name": "monto",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "build": "next build",
-    "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "@vercel/og": "^0.2.0",
-    "gray-matter": "^4.0.3",
-    "next": "^13.3.0",
-    "next-sitemap": "^3.1.54",
-    "prettier": "^2.7.1",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "remark": "^14.0.2",
-    "remark-html": "^15.0.1",
-    "ua-parser-js": "^1.0.35"
+    "react": "19.0.0-rc-66855b96-20241106",
+    "react-dom": "19.0.0-rc-66855b96-20241106",
+    "next": "15.0.3"
   },
   "devDependencies": {
-    "@types/gtag.js": "^0.0.12",
-    "@types/node": "18.7.18",
-    "@types/react": "18.0.20",
-    "@types/react-dom": "18.0.6",
-    "@types/ua-parser-js": "^0.7.36",
-    "eslint": "8.23.1",
-    "eslint-config-next": "12.3.1",
-    "typescript": "4.8.3"
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "eslint": "^8",
+    "eslint-config-next": "15.0.3"
   }
 }
