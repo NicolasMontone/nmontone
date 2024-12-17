@@ -30,7 +30,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-row gap-2">
-          - I&apos;m a nerd{' '}
+          - I&apos;m a Hacker{' '}
           <div className="text-text-mute">
             I love doing reverse engineering.
           </div>
